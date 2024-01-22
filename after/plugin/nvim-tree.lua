@@ -24,4 +24,5 @@ require("nvim-tree").setup({
   },
 })
 
-vim.keymap.set("n","<C-b>",":NvimTreeToggle <Enter>")
+vim.keymap.set("n","<C-n>",":NvimTreeToggle <Enter>")
+vim.keymap.set("n","<C-m>",":NvimTreeFocus <Enter>")
