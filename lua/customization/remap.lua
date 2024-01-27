@@ -1,5 +1,4 @@
 
-vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 vim.keymap.set("n", "<C-s>",vim.cmd.write)
 
@@ -21,4 +20,3 @@ vim.keymap.set("n","<leader>Y","\"+Y")
 vim.keymap.set("i", "<A-l>","<Right>")
 vim.keymap.set("i", "<A-h>","<Left>")
 vim.keymap.set("i", "<A-j>","<Down>")
-vim.keymap.set("i", "<A-k>","<Up>")
