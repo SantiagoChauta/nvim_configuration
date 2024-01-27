@@ -1,3 +1,8 @@
 return {
-    "tpope/vim-fugitive"
+    "tpope/vim-fugitive",
+    cmd = {"G", "Git"},
+    keys = {
+        {"<leader>gf", ":Git fetch --all -p<cr>", desc = "Git fetch"},
+        {"<leader>gp", ":Git pull origin main<cr>", desc = "Git pull"},
+    },
 }
