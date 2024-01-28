@@ -19,8 +19,14 @@ return {
       },
     }
   },
-  config = function(opts)
-    require('telescope').setup(opts)
+  config = function()
+    require('telescope').setup({
+      defaults = {
+        file_ignore_pattern = {
+          "node_modules"
+        }
+      }
+    })
     require('telescope').load_extension('fzf')
   end,
   keys = {
