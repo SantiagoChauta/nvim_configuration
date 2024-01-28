@@ -66,7 +66,7 @@ return {
       desc = "Telescope Git branches",
     },
     {
-      "<leader>rp",
+      "<leader>tp",
       function()
         require("telescope.builtin").find_files({
           prompt_title = "Plugins",
