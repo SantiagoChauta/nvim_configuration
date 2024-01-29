@@ -18,7 +18,7 @@ function M.setup()
       ["<C-e>"] = cmp.mapping.abort(),
       ["<C-j>"] = cmp.mapping.select_next_item(),
       ["<C-k>"] = cmp.mapping.select_prev_item(),
-      ["<C-y>"] = cmp.mapping.confirm {
+      ["<cr>"] = cmp.mapping.confirm {
         behavior = cmp.ConfirmBehavior.Insert,
         select = true,
       },
