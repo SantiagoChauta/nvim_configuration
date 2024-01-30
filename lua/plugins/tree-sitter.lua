@@ -10,6 +10,7 @@ return {
   opts = {
     ensure_installed = {
       "html",
+      "javascript",
       "lua",
       "luadoc",
       "php",
