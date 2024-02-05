@@ -11,6 +11,9 @@ return {
 
     lsp_zero.on_attach(function(client,bufnr)
       lsp_zero.default_keymaps({buffer=bufnr})
+      vim.keymap.set("n"},"<leader>fo",function ()
+        vim.lsp.buf.format {async = true}
+      end, {buffer=bufnr})
     end)
     require("mason").setup()
     require("mason-lspconfig").setup({
