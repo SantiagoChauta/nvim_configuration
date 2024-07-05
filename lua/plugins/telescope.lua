@@ -4,10 +4,8 @@ return {
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-telescope/telescope-file-browser.nvim",
-    {
-      'nvim-telescope/telescope-fzf-native.nvim',
-      build = 'make'
-    } },
+    "nvim-telescope/telescope-fzf-native.nvim",
+    },
   opts = {
     extensions = {
       fzf = {
@@ -19,15 +17,14 @@ return {
       },
     }
   },
-  config = function()
+  config = function ()
     require('telescope').setup({
       defaults = {
         file_ignore_patterns = {
           "./node_modules/*"
         }
-      }
+      },
     })
-    require('telescope').load_extension('fzf')
   end,
   keys = {
     {
